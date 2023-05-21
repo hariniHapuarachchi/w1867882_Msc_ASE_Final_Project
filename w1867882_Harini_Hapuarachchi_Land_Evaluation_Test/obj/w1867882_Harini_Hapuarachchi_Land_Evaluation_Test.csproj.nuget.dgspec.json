@@ -1,0 +1,223 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation\\w1867882_Harini_Hapuarachchi_Land_Evaluation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation\\w1867882_Harini_Hapuarachchi_Land_Evaluation.csproj",
+        "projectName": "w1867882_Harini_Hapuarachchi_Land_Evaluation",
+        "projectPath": "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation\\w1867882_Harini_Hapuarachchi_Land_Evaluation.csproj",
+        "packagesPath": "C:\\Users\\harin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\harin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.4, )"
+            },
+            "GemBox.Document": {
+              "target": "Package",
+              "version": "[35.0.1363, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
+            "IronPython": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "IronPython.StdLib": {
+              "target": "Package",
+              "version": "[3.4.0, )"
+            },
+            "LightGBM": {
+              "target": "Package",
+              "version": "[3.3.5, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.Extensions.ML": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.ML": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.ML.FastTree": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "Microsoft.ML.LightGbm": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
+            "System.IO.FileSystem": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "iTextSharp": {
+              "target": "Package",
+              "version": "[5.5.13.3, )"
+            },
+            "itext7": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "python": {
+              "target": "Package",
+              "version": "[3.11.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test.csproj",
+        "projectName": "w1867882_Harini_Hapuarachchi_Land_Evaluation_Test",
+        "projectPath": "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test.csproj",
+        "packagesPath": "C:\\Users\\harin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation_Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\harin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation\\w1867882_Harini_Hapuarachchi_Land_Evaluation.csproj": {
+                "projectPath": "C:\\Users\\harin\\OneDrive\\Documents\\IIT\\ResearchProject\\w1867882_Harini_Hapuarachchi_Land_Evaluation\\w1867882_Harini_Hapuarachchi_Land_Evaluation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

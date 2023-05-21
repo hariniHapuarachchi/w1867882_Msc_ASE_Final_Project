@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+@model w1867882_Harini_Hapuarachchi_Land_Evaluation.Views.VidewModel.RubberLandView
+
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color:darkcyan; background-image: url(../Images/landEvaluate1.jpg); background-repeat:no-repeat; background-size:cover">
+    <div class="text-center">
+        <h1 class="display-4" style="font-weight:bold;font-size:30px">Enter your data to predict the Suitability of Rubber</h1>
+        <div>
+            <form style="justify-content:center" method="post">
+                <div class="form-group">
+                    <label style="width:500px; text-align:left; color:aliceblue">Elevation</label>
+                    <input type="number" class="form-control" style="width:500px; margin-left:300px" id="evaluation" name="evaluation" runat="server" placeholder="m" />
+                </div>
+                <div class="dropdown">
+                    <label asp-for="LandModel.Location" style="width:500px; text-align:left; color:aliceblue">Location</label>
+                    <select class="dropdown-toggle" asp-for="LandModel.Location" style="width:500px; margin-right:320px; margin-left:300px" id="dropdownLocation">
+                        <option>Select Up/Mis/Low Country</option>
+                        <option class="dropdown-item" value="Up">Up Country</option>
+                        <option class="dropdown-item" value="Mis">Mis Country</option>
+                        <option class="dropdown-item" value="Low">Low Country</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LandModel.Days" style="width:500px; text-align:left; color:aliceblue">Growning Period</label>
+                    <input asp-for="LandModel.Days" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="gPeriod" placeholder="Enter Number Days">
+                    @*<span asp-validation-for="LastName" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="LandModel.MeanAnualRF" style="width:500px; text-align:left; color:aliceblue">Mean Annual RF</label>
+                    <input asp-for="LandModel.MeanAnualRF" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="meanAnnualRF" placeholder="mm">
+                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="LandModel.SoilDepth" style="width:500px; text-align:left; color:aliceblue">Soil Depth</label>
+                    <input asp-for="LandModel.SoilDepth" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="soilDepth" placeholder="cm">
+                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="RubberLandModel.MeanAnualTemp" style="width:500px; text-align:left; color:aliceblue">Mean Anual Temperature</label>
+                    <input asp-for="RubberLandModel.MeanAnualTemp" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="MeanAnualTemp" placeholder="Celcius">
+                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
+                </div>
+                <div class="dropdown">
+                    <label asp-for="LandModel.SoilDrainageClass" style="width:500px; text-align:left; color:aliceblue">Soil Drainage Class</label>
+                    <select class="dropdown-toggle" asp-for="LandModel.SoilDrainageClass" style="width:500px; margin-right:320px; margin-left:300px" id="dropdownDrainage">
+                        <option>Select WD/MWD/ED/ID/PD</option>
+                        <option class="dropdown-item" value="WD">WD</option>
+                        <option class="dropdown-item" value="MWD">MWD</option>
+                        <option class="dropdown-item" value="EXD">EXD</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LandModel.SoilPH" style="width:500px; text-align:left; color:aliceblue">Soil PH</label>
+                    <input asp-for="LandModel.SoilPH" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="SoilPH" placeholder="ph">
+                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="LandModel.RockOutcrops" style="width:500px; text-align:left; color:aliceblue">Rock Outcrops %</label>
+                    <input asp-for="LandModel.RockOutcrops" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="RockOutcrops" placeholder="Please give a percenatge">
+                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
+                </div>
+                <br />
+                <div class="btn-toolbar" role="toolbar" style="margin-left: 300px" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group" style="margin-right:10px">
+                        <button type="submit" class="btn btn-primary" asp-controller="EvaluateRubber" asp-action="Create">Evaluate</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Second group" style="margin-left:10px">
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+

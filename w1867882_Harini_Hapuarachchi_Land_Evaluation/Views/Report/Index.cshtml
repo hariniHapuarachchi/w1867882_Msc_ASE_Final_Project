@@ -1,0 +1,265 @@
+﻿@{
+	ViewData["Title"] = "Index";
+}
+
+<head>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</head>
+<body>
+	<h1 class="display-4 text-center" style="font-weight:bold;font-size:30px">Crop Details with Final Prediction</h1>
+    <div class="row">
+        @if (ViewBag.FinalResult[ViewBag.FinalResult.Length - 1].ToString() == "Tea")
+        {
+            <div class="row">
+                <div class="col-1" style="border-top:70px; padding-top:70px; border-left:60px; padding-left:60px;">
+                <table class="table table-dark" style="width:600px;">
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Land Id</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[0]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">User Name</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[2]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Location</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[3]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Growing Period</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[4]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Mean Annual RF</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[5]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Depth</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[6]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Drainage Class</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[7]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Ph</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[8]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Rock Outcrops</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[9]</td>
+                        </tr>
+                        @if (ViewBag.FinalResult[11].ToString() != null)
+                        {
+                            <tr>
+                                <th scope="row" class="table-active" style="width:300px">Elevation</th>
+                                <td style="text-align:center">@ViewBag.FinalResult[11]</td>
+                            </tr>
+                        }
+                        else if (ViewBag.FinalResult[12].ToString() != null)
+                        {
+                            <tr>
+                                <th scope="row" class="table-active" style="width:300px">Elevation</th>
+                                <td style="text-align:center">@ViewBag.FinalResult[12]</td>
+                            </tr>
+                        }
+                        else
+                        {
+                            <tr>
+                                <th scope="row" class="table-active" style="width:300px">Elevation</th>
+                                <td style="text-align:center">@ViewBag.FinalResult[13]</td>
+                            </tr>
+                        }
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Texture</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[14]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Stones And Grovels</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[15]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Slope Angle</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[16]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Past Erosion</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[17]</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <div class="col-2" style="margin-left:700px;border-top:150px; padding-top:150px;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../Images/TeaLeaves.jpg" alt="Card image cap">
+                    <div class="card-body" style="background-color:aliceblue">
+                        <h5 class="card-title">Mostly Suitable For Tea</h5>
+                        <p class="card-text">This Land can be predicted as a @ViewBag.FinalResult[ViewBag.FinalResult.Length - 2].ToString() to cultivate.</p>
+                        <button class="btn btn-success">@Html.ActionLink("Generate and Download Pdf", "GenerateReport", "Report")</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row" style="height:50px"></div>
+            
+        }
+        else if (ViewBag.FinalResult[ViewBag.FinalResult.Length - 1].ToString() == "Rubber")
+        {
+            <div class="row">
+            <div class="col-1" style="border-top:70px; padding-top:70px; border-left:60px; padding-left:60px;">
+                <table class="table table-dark" style="width:600px; ">
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Land Id</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[0]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">User Name</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[2]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Location</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[3]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Growing Period</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[4]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Mean Annual RF</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[5]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Depth</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[6]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Drainage Class</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[7]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Ph</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[8]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Rock Outcrops</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[9]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Elevation</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[11]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Mean Anual Temperature</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[12]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="col-2" style="margin-left:700px;border-top:100px; padding-top:100px;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../Images/rubberTree.jpg" alt="Card image cap">
+                    <div class="card-body" style="background-color:aliceblue">
+                        <h5 class="card-title">Mostly Suitable For Rubber</h5>
+                        <p class="card-text">This Land can be predicted as a @ViewBag.FinalResult[ViewBag.FinalResult.Length - 2].ToString() to cultivate.</p>
+                            <button class="btn btn-success">@Html.ActionLink("Generate and Download Pdf", "GenerateReport", "Report")</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row" style="height:50px"></div>
+        }
+        else
+        {
+            <div class="row">
+                <div class="col-1" style="border-top:70px; padding-top:70px; border-left:60px; padding-left:60px;">
+                <table class="table table-dark" style="width:600px; ">
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Land Id</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[0]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">User Name</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[2]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Location</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[3]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Growing Period</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[4]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Mean Annual RF</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[5]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Depth</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[6]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Drainage Class</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[7]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Ph</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[8]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Rock Outcrops</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[9]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Elevation</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[11]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Mean Anual Temperature</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[12]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Total Sunshine</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[13]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Minimum Humidity</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[14]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Soil Texture</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[15]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Water Depth</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[16]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">EC</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[17]</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="table-active" style="width:300px">Slope Angle</th>
+                            <td style="text-align:center">@ViewBag.FinalResult[18]</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-2" style="margin-left:700px;border-top:150px; padding-top:150px;">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../Images/coconutTree.jpg" alt="Card image cap">
+                    <div class="card-body" style="background-color:aliceblue">
+                        <h5 class="card-title">Mostly Suitable For Coconut</h5>
+                        <p class="card-text">This Land can be predicted as a @ViewBag.FinalResult[ViewBag.FinalResult.Length - 2].ToString() to cultivate.</p>
+                        <button class="btn btn-success">@Html.ActionLink("Generate and Download Pdf", "GenerateReport", "Report")</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div classs="row" style="height:50px"></div>
+        }
+    </div>
+</body>

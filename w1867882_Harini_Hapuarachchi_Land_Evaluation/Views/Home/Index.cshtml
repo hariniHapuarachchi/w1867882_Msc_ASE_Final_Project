@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color:cadetblue; background-image: url(../Images/Farming2.jpg); background-repeat:no-repeat; background-size:cover">
+    <div class="text-center" style="margin-top:50px">
+        <h1 class="display-4" style="font-weight:bold;font-size:30px">Welcome to the Land Evaluation System</h1>
+        <p>An automated solution that willing to evaluate land suitability in a way which previous work didn’t attempt will provide a functionality to evaluate a land based on several characteristic value. Previous work provided a Geographical Information Systems (GIS) based solution which may be difficult to identify the suitable crop for a relevant area by going through maps. But that solutions can only refer by Geographical Information Systems (GIS) knowledgeable person. Contribution of this automated application is to easily evaluate the suitable crop for a given land and avoid the limitation of type of users.</p>
+        <div class="row">
+            <div class="form-group">
+                <p>Get Experience with predicting crop <a asp-controller="SignUp" asp-action="Index">
+                    <input type="button" class="btn btn-primary" value="Sign Up"/>
+                </a></p>
+            </div>
+            <div class="form-group">
+                <p>
+                    Already have an account? <a asp-controller="SignIn" asp-action="Index">
+                    <input type="button" class="btn btn-link" value="Sign In" />
+                </a></p>
+            </div>
+        </div>
+    </div>
+</body>

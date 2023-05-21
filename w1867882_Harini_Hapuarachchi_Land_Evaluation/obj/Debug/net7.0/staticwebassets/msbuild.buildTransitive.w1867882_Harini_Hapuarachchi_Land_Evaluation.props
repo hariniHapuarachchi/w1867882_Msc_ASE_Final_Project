@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\w1867882_Harini_Hapuarachchi_Land_Evaluation.props" />
+</Project>

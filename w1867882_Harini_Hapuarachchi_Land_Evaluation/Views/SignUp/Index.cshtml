@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model User
+
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color:cadetblue; background-image: url(../Images/green.jpg); background-repeat:no-repeat; background-size:cover">
+    <div class="text-center">
+        <h1 class="display-4" style="font-weight:bold;font-size:30px">Register for the Land Evaluation System</h1>
+        <div>
+            <form style="justify-content:center" method="post">
+                <div class="form-group">
+                    <label asp-for="FirstName" style="width:500px; text-align:left">First Name</label>
+                    <input asp-for="FirstName" type="text" class="form-control" style="width:500px; margin-left:300px" id="firstName" runat="server" placeholder="Enter First Name"/>
+                    @*<span asp-validation-for="FirstName" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName" style="width:500px; text-align:left">Last Name</label>
+                    <input asp-for="LastName" type="text" class="form-control" style="width: 500px; margin-left: 300px" id="lastName" placeholder="Enter Last Name">
+                    @*<span asp-validation-for="LastName" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" style="width:500px; text-align:left">Address</label>
+                    <input asp-for="Address" type="text" class="form-control" style="width: 500px; margin-left: 300px" id="assress" placeholder="Enter Address">
+                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
+                </div>
+                <div style="margin-right: 340px">
+                    <div class="form-check form-check-inline">
+                        <input asp-for="Gender" class="form-check-input" type="radio" id="femaleCheck" value=true>
+                        <label asp-for="Gender"  class="form-check-label" for="femaleCheck">Female</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input asp-for="Gender"  class="form-check-input" type="radio" id="maleCheck" value=false>
+                        <label asp-for="Gender" class="form-check-label" for="maleCheck">Male</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Phone" style="width:500px; text-align:left">Phone</label>
+                    <input asp-for="Phone" type="tel" style="width: 500px; margin-left: 300px" class="form-control" id="phone" placeholder="0714563456">
+                    @*<span asp-validation-for="Phone" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" style="width:500px; text-align:left">Email</label>
+                    <input asp-for="Email" type="email" style="width: 500px; margin-left: 300px" class="form-control" id="email" placeholder="abc@g.com">
+                    @*<span asp-validation-for="Email" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="Dob" style="width:500px; text-align:left">Date of Birth</label>
+                    <input asp-for="Dob" type="date" style="width: 500px; margin-left: 300px" class="form-control" id="dob" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="form-group">
+                    <label asp-for="Nic" style="width:500px; text-align:left">NIC</label>
+                    <input asp-for="Nic" type="text" style="width: 500px; margin-left: 300px" class="form-control" id="nic" placeholder="123456789V/123456789675">
+                    @*<span asp-validation-for="Nic" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="UserName" style="width:500px; text-align:left">User Name</label>
+                    <input asp-for="UserName" type="text" style="width: 500px; margin-left: 300px" class="form-control" id="userName" placeholder="Enter User Name">
+                    @*<span asp-validation-for="UserName" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" style="width:500px; text-align:left">Password</label>
+                    <input asp-for="Password" type="password" style="width: 500px; margin-left: 300px" class="form-control" id="password" placeholder="Password">
+                    @*<span asp-validation-for="Password" class="text-danger"></span>*@
+                </div>
+                <div class="form-group">
+                    <label for="confPassword" style="width:500px; text-align:left">Confirm Password</label>
+                    <input type="password" style="width: 500px; margin-left: 300px" class="form-control" id="confPassword" name="confPassword" placeholder="Password">
+                    @* <span asp-validation-for="Password" class="text-danger"></span>*@
+                </div>
+                <br />
+                <div class="btn-toolbar" role="toolbar" style="margin-left: 300px" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group" style="margin-right:10px">
+                        <button type="submit" class="btn btn-primary" asp-controller="SignUp" asp-action="Create">Sign Up</button>
+                    </div>
+                    <div class="btn-group mr-2" role="group" aria-label="Second group" style="margin-left:10px">
+                        <button type="reset" class="btn btn-primary">Reset</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+

@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = w1867882_Harini_Hapuarachchi_Land_Evaluation
+build_property.RootNamespace = w1867882_Harini_Hapuarachchi_Land_Evaluation
+build_property.ProjectDir = C:\Users\harin\OneDrive\Documents\IIT\ResearchProject\w1867882_Harini_Hapuarachchi_Land_Evaluation\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\harin\OneDrive\Documents\IIT\ResearchProject\w1867882_Harini_Hapuarachchi_Land_Evaluation
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/EvaluateCoconut/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGVDb2NvbnV0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/EvaluateRubber/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGVSdWJiZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Evaluate/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZhbHVhdGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/MenuCrop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudUNyb3BcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Report/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/SignIn/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbkluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/UserManagement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlck1hbmFnZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/harin/OneDrive/Documents/IIT/ResearchProject/w1867882_Harini_Hapuarachchi_Land_Evaluation/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-wnhiwkbws1

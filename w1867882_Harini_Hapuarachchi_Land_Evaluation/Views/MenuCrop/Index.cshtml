@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+<style>
+    .button {
+        border-radius: 4px;
+        background-color: darkolivegreen;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 700px;
+        height: 60px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 10px;
+        font-size:20px
+    }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+            .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+            .button:hover span:after {
+                opacity: 1;
+                right: 0;
+            }
+</style>
+</head>
+<body style="background-image: url(../Images/greenDrops.jpg); background-repeat:no-repeat; background-size:cover">
+    <div style="margin-left: 180px; margin-right:70px; margin-top:130px; margin-bottom:70px">
+        <a type="button" class="btn-success btn-lg btn-block button" asp-controller="MenuCrop" asp-action="EvaluateTCrop"><span> Check if Land is suitable for Tea </span></a>
+        <a type="button" class="btn-success btn-lg btn-block button" asp-controller="MenuCrop" asp-action="EvaluateRCrop"><span>Check if Land is suitable for Rubber </span></a>
+        <a type="button" class="btn-success btn-lg btn-block button" asp-controller="MenuCrop" asp-action="EvaluateCCrop"><span>Check if Land is suitable for Coconut </span></a>
+    </div>
+</body>
+

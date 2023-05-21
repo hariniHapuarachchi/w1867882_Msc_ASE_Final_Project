@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<head>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body style="background-color:cadetblue; background-image: url(../Images/SpringBokeh.jpg); background-repeat:no-repeat; background-size:cover">
+    <div class="text-center">
+        <h1 class="display-4" style="font-weight:bold;font-size:30px">Get Experienced with Automated Land Evaluation...</h1>
+        <div>
+            <div class="row" style="margin-left:240px; margin-top:40px">
+                <div class="card; row-cols-1" style="width: 20rem;">
+                    <img class="card-img-top" src="../Images/Evaluation.jpg" style="width:180px; height:130px; border-radius:10px">
+                    <div class="card-body" style="width:20rem">
+                        <h5 class="card-title">Land Evaluation</h5>
+                        <p class="card-text">User can receive a predicted crop for thrie land.</p>
+                        <a class="btn btn-primary" asp-controller="Dashboard" asp-action="Evaluate">Evaluate</a>
+                    </div>
+                </div>
+                <div class="card; row-cols-3" style="width: 20rem;">
+                    <img class="card-img-top" src="../Images/userManagement.png" style="width:180px; height:130px; border-radius:10px">
+                    <div class="card-body" style="width:20rem">
+                        <h5 class="card-title">User Management</h5>
+                        <p class="card-text">User can manage their account to update user details.</p>
+                        <a class="btn btn-primary" asp-controller="Dashboard" asp-action="UserManagement">Manage User</a>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </div>
+</body>
+
