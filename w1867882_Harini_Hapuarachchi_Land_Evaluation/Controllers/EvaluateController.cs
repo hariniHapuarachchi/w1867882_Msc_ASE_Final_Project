@@ -135,10 +135,6 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Controllers
         {
             string pythonDll = @"C:\Users\harin\AppData\Local\Programs\Python\Python311\python311.dll";
             Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", pythonDll);
-            //string pythonCtype = @"C:\Users\harin\AppData\Local\Programs\Python\Python311\DLLs\_ctypes.pyd";
-            //Environment.SetEnvironmentVariable("PYTHONNET_PYD", pythonCtype);
-            //string pythonLightGbm = @"C:\Users\harin\.nuget\packages\lightgbm\3.3.5\";
-            //Environment.SetEnvironmentVariable("PYTHONNET_LGB", pythonLightGbm);
             PythonEngine.Initialize();
         }
 

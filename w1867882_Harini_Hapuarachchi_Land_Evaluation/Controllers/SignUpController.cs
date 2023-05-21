@@ -23,13 +23,6 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(User obj, string confPassword)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    _context.Users.Add(obj);
-            //    _context.SaveChanges();
-            //    return RedirectToAction("Index");
-            //}
-            //return View(obj);
             _context.Users.Add(obj);
             _context.SaveChanges();
             return RedirectToAction("Index", "SignIn");

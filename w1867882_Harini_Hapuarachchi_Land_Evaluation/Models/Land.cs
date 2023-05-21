@@ -14,15 +14,9 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Models
         public int Days { get; set; }
         public float MeanAnualRF { get; set; }
         public float SoilDepth { get; set; }
-        //public string SoilTexture { get; set; }
-        //public float StonesAndGrovels { get; set; }
         public string SoilDrainageClass { get; set; }
         public float SoilPH { get; set; }
-        //public float SlopeAngle { get; set; }
-        //public string PastErosion { get; set; }
         public float RockOutcrops { get; set; }
-        //public int ClassOfLandUnit { get; set; }
-
         public int UserId { get; set; }
         public User User { get; set; }
 

@@ -26,14 +26,6 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(RubberLandView obj, int evaluation)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    _context.Users.Add(obj);
-            //    _context.SaveChanges();
-            //    return RedirectToAction("Index");
-            //}
-            //return View(obj);
-            //var TeaCrop = PredictTea(obj);
             obj.RubberLandModel.Evaluation = evaluation;
             obj.LandModel.LandId = GenerateKey();
             obj.LandModel.UserId = GetUserId(UsersName);
@@ -124,10 +116,6 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Controllers
         {
             string pythonDll = @"C:\Users\harin\AppData\Local\Programs\Python\Python311\python311.dll";
             Environment.SetEnvironmentVariable("PYTHONNET_PYDLL", pythonDll);
-            //string pythonCtype = @"C:\Users\harin\AppData\Local\Programs\Python\Python311\DLLs\_ctypes.pyd";
-            //Environment.SetEnvironmentVariable("PYTHONNET_PYD", pythonCtype);
-            //string pythonLightGbm = @"C:\Users\harin\.nuget\packages\lightgbm\3.3.5\";
-            //Environment.SetEnvironmentVariable("PYTHONNET_LGB", pythonLightGbm);
             PythonEngine.Initialize();
         }
 

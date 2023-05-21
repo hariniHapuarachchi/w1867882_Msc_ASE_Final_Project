@@ -26,14 +26,6 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Create(CoconutLandView obj, int evaluation)
         {
-            //if (ModelState.IsValid)
-            //{
-            //    _context.Users.Add(obj);
-            //    _context.SaveChanges();
-            //    return RedirectToAction("Index");
-            //}
-            //return View(obj);
-            //var TeaCrop = PredictTea(obj);
 
             obj.CoconutLandModel.Evaluation = evaluation;
             obj.LandModel.LandId = GenerateKey();

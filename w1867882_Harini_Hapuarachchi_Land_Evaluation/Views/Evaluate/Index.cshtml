@@ -17,7 +17,6 @@
                 <div class="form-group">
                     <label style="width:500px; text-align:left; color:aliceblue">Elevation</label>
                     <input type="number" class="form-control" style="width:500px; margin-left:300px" id="evaluation" name="evaluation" runat="server" placeholder="10m" />
-                    @*<span asp-validation-for="FirstName" class="text-danger"></span>*@
                 </div>
                 <div class="dropdown">
                     <label asp-for="LandModel.Location"  style="width:500px; text-align:left; color:aliceblue">Location</label>
@@ -31,17 +30,14 @@
                 <div class="form-group">
                     <label asp-for="LandModel.Days" style="width:500px; text-align:left; color:aliceblue">Growning Period</label>
                     <input asp-for="LandModel.Days" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="gPeriod" placeholder="Enter Number Days">
-                    @*<span asp-validation-for="LastName" class="text-danger"></span>*@
                 </div>
                 <div class="form-group">
                     <label asp-for="LandModel.MeanAnualRF" style="width:500px; text-align:left; color:aliceblue">Mean Annual RF</label>
                     <input asp-for="LandModel.MeanAnualRF" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="meanAnnualRF" placeholder="mm">
-                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
                 </div>
                 <div class="form-group">
                     <label asp-for="LandModel.SoilDepth" style="width:500px; text-align:left; color:aliceblue">Soil Depth</label>
                     <input asp-for="LandModel.SoilDepth" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="soilDepth" placeholder="cm">
-                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
                 </div>
                 <div class="dropdown">
                     <label asp-for="TeaLandModel.SoilTexture" style="width:500px; text-align:left; color:aliceblue">Soil Texture</label>
@@ -58,7 +54,6 @@
                 <div class="form-group">
                     <label asp-for="TeaLandModel.StonesAndGrovels" style="width:500px; text-align:left; color:aliceblue">Stones and Grovels %</label>
                     <input asp-for="TeaLandModel.StonesAndGrovels" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="StonesAndGrovels" placeholder="Please give a percenatge">
-                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
                 </div>
                 <div class="dropdown">
                     <label asp-for="LandModel.SoilDrainageClass" style="width:500px; text-align:left; color:aliceblue">Soil Drainage Class</label>
@@ -74,12 +69,10 @@
                 <div class="form-group">
                     <label asp-for="LandModel.SoilPH" style="width:500px; text-align:left; color:aliceblue">Soil PH</label>
                     <input asp-for="LandModel.SoilPH" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="SoilPH" placeholder="ph">
-                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
                 </div>
                 <div class="form-group">
                     <label asp-for="TeaLandModel.SlopeAngle" style="width:500px; text-align:left; color:aliceblue">Slope Angle %</label>
                     <input asp-for="TeaLandModel.SlopeAngle" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="SlopeAngle" placeholder="Please give a percenatge">
-                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
                 </div>
                 <div class="dropdown">
                     <label asp-for="TeaLandModel.PastErosion" style="width:500px; text-align:left; color:aliceblue">Past Erosion</label>
@@ -94,7 +87,6 @@
                 <div class="form-group">
                     <label asp-for="LandModel.RockOutcrops" style="width:500px; text-align:left; color:aliceblue">Rock Outcrops %</label>
                     <input asp-for="LandModel.RockOutcrops" type="number" class="form-control" style="width: 500px; margin-left: 300px" id="RockOutcrops" placeholder="Please give a percenatge">
-                    @*<span asp-validation-for="Address" class="text-danger"></span>*@
                 </div>
                 <br />
                 <div class="btn-toolbar" role="toolbar" style="margin-left: 300px" aria-label="Toolbar with button groups">
