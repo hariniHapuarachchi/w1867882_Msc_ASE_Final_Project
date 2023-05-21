@@ -35,7 +35,7 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Controllers
             _context.RubberLands.Add(obj.RubberLandModel);
             _context.SaveChanges();
             WriteDataToExcel(obj);
-            string classofLand = RunPythonTeaCodeAndReturn();
+            string classofLand = RunPythonRubberCodeAndReturn();
             _context.Evaluations.Add(new Evaluation { LandId = obj.LandModel.LandId, Prediction = classofLand });
             _context.SaveChanges();
 
@@ -78,7 +78,7 @@ namespace w1867882_Harini_Hapuarachchi_Land_Evaluation.Controllers
             return userId;
         }
 
-        public string RunPythonTeaCodeAndReturn()
+        public string RunPythonRubberCodeAndReturn()
         {
             string returnedVariableName = "rubber_output";
             object returnedVariable = "";
